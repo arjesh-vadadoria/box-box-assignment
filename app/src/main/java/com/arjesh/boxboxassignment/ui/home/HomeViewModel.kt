@@ -3,11 +3,11 @@ package com.arjesh.boxboxassignment.ui.home
 import androidx.lifecycle.viewModelScope
 import com.arjesh.boxboxassignment.base.BaseViewModel
 import com.arjesh.boxboxassignment.data.model.RaceSchedules
-import com.arjesh.boxboxassignment.domain.util.ApiResult
 import com.arjesh.boxboxassignment.domain.repository.driver.DriverRepository
 import com.arjesh.boxboxassignment.domain.repository.race.RaceRepository
 import com.arjesh.boxboxassignment.domain.usecase.GetUpcomingRaceSessionUseCase
 import com.arjesh.boxboxassignment.domain.usecase.GetUpcomingRaceUseCase
+import com.arjesh.boxboxassignment.domain.util.ApiResult
 import com.arjesh.boxboxassignment.ui.home.state.HomeEffect
 import com.arjesh.boxboxassignment.ui.home.state.HomeUiState
 import com.arjesh.boxboxassignment.ui.home.state.HomeViewModelState

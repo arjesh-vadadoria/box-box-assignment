@@ -15,8 +15,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -77,7 +75,7 @@ fun UpcomingRaceDetailsScreen(
                     .padding(vertical = RootScreenPadding)
             ) {
                 Icon(
-                    imageVector = Icons.AutoMirrored.Rounded.ArrowBack,
+                    painter = painterResource(R.drawable.ic_back),
                     contentDescription = "back icon",
                     modifier = Modifier
                         .offset(x = (-6).dp)

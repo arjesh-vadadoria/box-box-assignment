@@ -2,7 +2,6 @@ package com.arjesh.boxboxassignment.ui.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -28,6 +27,7 @@ import com.arjesh.boxboxassignment.theme.DarkBG
 import com.arjesh.boxboxassignment.theme.HomeCardRowHeight
 import com.arjesh.boxboxassignment.theme.ListElementPadding
 import com.arjesh.boxboxassignment.theme.RootScreenPadding
+import com.arjesh.boxboxassignment.ui.common.BoxWithLoader
 import com.arjesh.boxboxassignment.ui.home.components.EducationCard
 import com.arjesh.boxboxassignment.ui.home.components.GetPro
 import com.arjesh.boxboxassignment.ui.home.components.HomeImageCard
@@ -68,10 +68,11 @@ fun HomeScreen(
         }
     }
 
-    Box(
+    BoxWithLoader(
         modifier = Modifier
             .fillMaxSize()
-            .background(DarkBG)
+            .background(DarkBG),
+        isLoading = state.isLoading,
     ) {
         LazyColumn(
             modifier = Modifier
@@ -101,7 +102,7 @@ fun HomeScreen(
                             .fillMaxHeight()
                             .weight(1f),
                         sessionName = state.sessionName ?: stringResource(R.string.fp1),
-                        sessionDate = state.sessionDate ?: stringResource(R.string.no_upcoming_session),
+                        sessionDate = state.sessionDate ?: stringResource(R.string.no_session),
                         sessionTime = state.sessionTime ?: stringResource(R.string._00_00),
                         sessionMeridiem = state.sessionMeridiem ?: stringResource(R.string.am),
                         onClick = {

@@ -13,7 +13,7 @@
     <string name="pos_01">01</string>
     <string name="_00">00</string>
     <string name="fp1">FP1</string>
-    <string name="no_upcoming_session">No upcoming session</string>
+    <string name="no_session">No session</string>
     <string name="_00_00">00:00</string>
     <string name="am">AM</string>
     <string name="no_upcoming_race_available">No upcoming race available</string>
